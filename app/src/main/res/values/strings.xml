@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FoodDiary</string>
+    <string name="app_slogan">Start tracking your diet and build a better lifestyle with FoodDiary.</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">LOGIN</string>
+    <string name="button_sign_up">SIGN UP</string>
+    <string name="button_return">BACK TO HOMEPAGE</string>
+
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_lastname">Last Name</string>
+    <string name="birthday">Birthday?</string>
+    <string name="calendar">Open Calendar</string>
+    <string name="gender">Gender?</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_custom">N/A</string>
+    <string name="policy">By registering, you agree to our Privacy Policy and Cookies Policy.</string>
+
+    <string name="new_note">New Note</string>
+    <string name="current_log">Current Log</string>
+    <string name="previous_logs">Previous Logs</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="update_email">Update Email?</string>
+    <string name="update_password">Update Password?</string>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/brown_medium1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15sp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/fooddiarylogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edittext_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autofillHints="name"
+                android:background="#30ffffff"
+                android:drawableStart="@drawable/username"
+                android:drawablePadding="10sp"
+                android:fontFamily="monospace"
+                android:hint="@string/hint_firstname"
+                android:inputType="textPersonName"
+                android:padding="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:autofillHints="name"
+                android:background="#30ffffff"
+                android:drawableStart="@drawable/username"
+                android:drawablePadding="10sp"
+                android:fontFamily="monospace"
+                android:hint="@string/hint_lastname"
+                android:inputType="textPersonName"
+                android:padding="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:autofillHints="emailAddress"
+                android:background="#30ffffff"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="10sp"
+                android:fontFamily="monospace"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:padding="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:autofillHints="password"
+                android:background="#30ffffff"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="10sp"
+                android:fontFamily="monospace"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:padding="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="20sp"
+                android:fontFamily="monospace"
+                android:text="@string/birthday"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10sp"
+                android:text="@string/calendar"
+                android:textColor="@color/brown_medium2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/brown_dark1" />
+
+            <TextView
+                android:id="@+id/textview_genders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="20sp"
+                android:fontFamily="monospace"
+                android:text="@string/gender"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_genders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_male"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/gender_male"
+                    android:textColor="@color/brown_dark1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_female"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/gender_female"
+                    android:textColor="@color/brown_dark1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_none"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/gender_custom"
+                    android:textColor="@color/brown_dark1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textview_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="20sp"
+                android:fontFamily="monospace"
+                android:text="@string/policy"
+                android:textColor="@color/yellow_light"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:padding="10sp"
+                android:text="@string/button_sign_up"
+                android:textColor="@color/yellow_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/yellow_dark" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

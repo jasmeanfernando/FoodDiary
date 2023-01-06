@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/brown_medium1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodDiaryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15sp" >
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:contentDescription="@string/app_name"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:src="@drawable/fooddiarylogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_new_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:fontFamily="monospace"
+            android:padding="10sp"
+            android:text="@string/new_note"
+            android:textColor="@color/yellow_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/yellow_dark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_current_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:fontFamily="monospace"
+            android:padding="10sp"
+            android:text="@string/current_log"
+            android:textColor="@color/yellow_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/yellow_dark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_previous_logs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:fontFamily="monospace"
+            android:padding="10sp"
+            android:text="@string/previous_logs"
+            android:textColor="@color/yellow_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/yellow_dark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:fontFamily="monospace"
+            android:padding="10sp"
+            android:text="@string/edit_profile"
+            android:textColor="@color/brown_medium2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_dark2" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
