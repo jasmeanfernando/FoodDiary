@@ -5,7 +5,7 @@ package com.example.fooddiary;
  * @author JasmeanFernando
  */
 public class Note {
-    private String food_item;
+    private final String food_item;
     private int calories, carbohydrates, protein, fat;
 
     /**
@@ -23,4 +23,23 @@ public class Note {
         this.protein = protein;
         this.fat = fat;
     }
+
+    /**
+     * This method concatenates Note object into a String.
+     * @return
+     */
+    @Override
+    public String toString() {
+        return food_item +
+                ": Calories " + calories +
+                "g, Carbs " + carbohydrates +
+                "g, Protein " + protein +
+                "g, Fat " + fat;
+    }
+
+    /**
+     * Getter method that returns number of calories.
+     * @return
+     */
+    public int getCalories() { return calories; }
 }

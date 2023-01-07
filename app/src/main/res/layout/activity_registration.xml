@@ -24,10 +24,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="10sp"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/fooddiarylogo"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:src="@drawable/fooddiarylogo" />
 
             <EditText
                 android:id="@+id/edittext_firstname"
@@ -204,5 +201,4 @@
 
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

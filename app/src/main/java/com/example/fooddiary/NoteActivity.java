@@ -9,7 +9,7 @@ import android.widget.EditText;
 import com.google.android.material.button.MaterialButton;
 
 /**
- * ProfileActivity: Activity that controls activity_note.xml.
+ * NoteActivity: Activity that controls activity_note.xml.
  * @author JasmeanFernando
  */
 public class NoteActivity extends AppCompatActivity {
@@ -43,6 +43,10 @@ public class NoteActivity extends AppCompatActivity {
 
             //save note in FoodDiaryActivity
             FoodDiaryActivity.currentNotes.add(newNote);
+
+            //clear page
+            Intent clear = new Intent(NoteActivity.this, NoteActivity.class);
+            startActivity(clear);
         });
 
         //return to FoodDiaryActivity

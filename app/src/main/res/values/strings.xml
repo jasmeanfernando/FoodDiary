@@ -28,7 +28,10 @@
     <string name="add_log">Add to Log</string>
 
     <string name="current_log">Current Log</string>
-    <string name="previous_logs">Previous Logs</string>
+    <string name="date">Today\'s Date</string>
+    <string name="calories_total">Total Calories (g)</string>
+    <string name="complete_log">Complete Log</string>
+    <string name="clear_log">Clear Log</string>
 
     <string name="edit_profile">Edit Profile</string>
     <string name="update_email">Update Email?</string>
