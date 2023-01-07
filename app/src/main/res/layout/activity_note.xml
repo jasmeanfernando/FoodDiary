@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/brown_medium1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15sp" >
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:contentDescription="@string/app_name"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:src="@drawable/fooddiarylogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:fontFamily="monospace"
+                android:text="@string/title_note"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="5sp"
+                android:fontFamily="monospace"
+                android:text="@string/food"
+                android:textColor="@color/brown_dark1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#88FBEFCA"
+                android:fontFamily="monospace"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textColor="@color/yellow_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="monospace"
+                android:text="@string/calories"
+                android:textColor="@color/brown_dark1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#88FBEFCA"
+                android:fontFamily="monospace"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textColor="@color/yellow_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_carbohydrates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="monospace"
+                android:text="@string/carbohydrates"
+                android:textColor="@color/brown_dark1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_carbohydrates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#88FBEFCA"
+                android:fontFamily="monospace"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textColor="@color/yellow_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_protein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="monospace"
+                android:text="@string/proteins"
+                android:textColor="@color/brown_dark1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_protein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#88FBEFCA"
+                android:fontFamily="monospace"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textColor="@color/yellow_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="monospace"
+                android:text="@string/fats"
+                android:textColor="@color/brown_dark1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_fat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#88FBEFCA"
+                android:fontFamily="monospace"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textColor="@color/yellow_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_add_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:fontFamily="monospace"
+                android:padding="10sp"
+                android:text="@string/add_log"
+                android:textColor="@color/yellow_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/yellow_dark" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_return"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5sp"
+                android:fontFamily="monospace"
+                android:padding="10sp"
+                android:text="@string/button_return"
+                android:textColor="@color/yellow_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/yellow_dark" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

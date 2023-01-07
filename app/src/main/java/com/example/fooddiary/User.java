@@ -1,12 +1,12 @@
 package com.example.fooddiary;
 
+/**
+ * User Class: Holds a valid user.
+ * @author JasmeanFernando
+ */
 public class User {
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String password;
+    private String firstName, lastName, email, password, gender;
     private final String birthday;
-    private String gender;
 
     /**
      * Constructor: Creates User object.
