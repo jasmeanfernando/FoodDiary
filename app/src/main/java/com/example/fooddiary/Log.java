@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @author JasmeanFernando
  */
 public class Log {
-    private ArrayList <Note> log = new ArrayList <Note> ();
+    private ArrayList <Note> log;
     private int log_calories;
 
     /**

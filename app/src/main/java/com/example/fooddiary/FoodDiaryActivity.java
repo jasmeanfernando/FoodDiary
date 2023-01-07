@@ -1,13 +1,10 @@
 package com.example.fooddiary;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
-
 import com.google.android.material.button.MaterialButton;
-
 import java.util.ArrayList;
 
 /**
@@ -19,8 +16,8 @@ public class FoodDiaryActivity extends AppCompatActivity {
     User user = MainActivity.currentUser;
     String user_name = user.getName();
 
-    public static ArrayList <Note> currentNotes = new ArrayList <Note> ();
-    public static ArrayList <Log> previousLogs = new ArrayList <Log> ();
+    public static ArrayList <Note> currentNotes = new ArrayList <> ();
+    public static ArrayList <Log> previousLogs = new ArrayList <> ();
 
     /**
      * This method runs FoodDiaryActivity.

@@ -21,7 +21,7 @@
     <string name="new_note">New Note</string>
     <string name="food">Food Item</string>
     <string name="Quantity">Quantity</string>
-    <string name="calories">Total Calories (g)</string>
+    <string name="calories">Calories (g)</string>
     <string name="carbohydrates">Carbohydrates (g)</string>
     <string name="fats">Fat (g)</string>
     <string name="proteins">Protein (g)</string>

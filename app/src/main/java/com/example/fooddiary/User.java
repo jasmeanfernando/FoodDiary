@@ -30,29 +30,29 @@ public class User {
      * This method returns name of user.
      * @return first name and last name
      */
-    public String getName() { return firstName + " " + lastName; };
+    public String getName() { return firstName + " " + lastName; }
 
     /**
      * This method returns email of user.
      * @return email
      */
-    public String getEmail() { return email; };
+    public String getEmail() { return email; }
 
     /**
      * This method returns password of user.
      * @return password
      */
-    public String getPassword() { return password; };
+    public String getPassword() { return password; }
 
     /**
      * This method returns birthday of user.
      * @return birthday
      */
-    public String getBirthday() { return birthday; };
+    public String getBirthday() { return birthday; }
 
     /**
      * This method returns gender of user.
      * @return gender
      */
-    public String getGender() { return gender; };
+    public String getGender() { return gender; }
 }

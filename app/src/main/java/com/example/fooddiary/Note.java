@@ -1,5 +1,7 @@
 package com.example.fooddiary;
 
+import androidx.annotation.NonNull;
+
 /**
  * Note Class: Holds a valid user.
  * @author JasmeanFernando
@@ -28,6 +30,7 @@ public class Note {
      * This method concatenates Note object into a String.
      * @return
      */
+    @NonNull
     @Override
     public String toString() {
         return food_item +

@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.google.android.material.button.MaterialButton;
-
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -18,7 +17,7 @@ import java.util.regex.Pattern;
  */
 public class MainActivity extends AppCompatActivity {
     //activity variables
-    public static ArrayList <User> registeredUsers = new ArrayList <User> ();
+    public static ArrayList <User> registeredUsers = new ArrayList<>();
     public static User currentUser;
     String user_email;
     String user_password;
