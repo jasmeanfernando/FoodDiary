@@ -27,6 +27,12 @@ public class User {
     }
 
     /**
+     * This method returns first name of user.
+     * @return first name
+     */
+    public String getFirstName() { return firstName; }
+
+    /**
      * This method returns name of user.
      * @return first name and last name
      */

@@ -39,31 +39,29 @@ public class CurrentLogActivity extends AppCompatActivity {
         log_date.setText(date);
 
         //initialize current log
-        //1) get all notes from FoodDiaryActivity
-        ArrayList <Note> all_notes = FoodDiaryActivity.currentNotes;
-        Log current_log = new Log (all_notes);
+        //1) get notes from FoodDiaryActivity
+        Log current_log = new Log (FoodDiaryActivity.currentNotes);
 
         //2) get note details
         ArrayList <String> current_log_details = new ArrayList<>();
-        for (Note note: all_notes) {
+        for (Note note: FoodDiaryActivity.currentNotes) {
             current_log_details.add(note.toString());
         }
 
         //3) finalize the adapters
-        ArrayAdapter <String> log_items_adapter;
-        log_items_adapter = new ArrayAdapter<> (this, android.R.layout.simple_list_item_1, current_log_details);
+        ArrayAdapter <String> log_items_adapter = new ArrayAdapter<> (this, android.R.layout.simple_list_item_1, current_log_details);
         log_items.setAdapter(log_items_adapter);
 
         //initialize current log's total calories
-        current_log.calculate_log();
-        log_calories.setText(current_log.getLogCalories());
+        int totalCalories = current_log.getLogCalories();
+        log_calories.setText(String.valueOf(totalCalories));
 
         //save current log
         completeLog.setOnClickListener(view -> {
-            //save log to previousLogs in FoodDiaryActivity
+            //save current log to previousLogs in FoodDiaryActivity
             FoodDiaryActivity.previousLogs.add(current_log);
 
-            //clear log in FoodDiaryActivity
+            //clear current log in FoodDiaryActivity
             FoodDiaryActivity.currentNotes.clear();
 
             //clear page

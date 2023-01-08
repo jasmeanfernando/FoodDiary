@@ -19,19 +19,15 @@ public class Log {
     }
 
     /**
-     * Method that calculates the total number of calories in a log.
-     */
-    public void calculate_log() {
-        int total = 0;
-        for (Note note: log) {
-            total = total + note.getCalories();
-        }
-        this.log_calories = total;
-    }
-
-    /**
      * Getter method that returns the total number of calories in a log.
      * @return
      */
-    public int getLogCalories() { return log_calories; }
+    public int getLogCalories() {
+        int total = 0;
+        for (Note note: this.log) {
+            total = total + note.getCalories();
+        }
+        this.log_calories = total;
+        return this.log_calories;
+    }
 }

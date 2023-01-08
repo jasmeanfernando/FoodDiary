@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class FoodDiaryActivity extends AppCompatActivity {
     //activity variables
     User user = MainActivity.currentUser;
-    String user_name = user.getName();
+    String user_first_name = user.getFirstName();
 
     public static ArrayList <Note> currentNotes = new ArrayList <> ();
     public static ArrayList <Log> previousLogs = new ArrayList <> ();
@@ -35,7 +35,7 @@ public class FoodDiaryActivity extends AppCompatActivity {
         MaterialButton editProfile = findViewById(R.id.button_edit_profile);
 
         //initialize profile information
-        String home_title = "Welcome back, " + user_name + "!";
+        String home_title = "Welcome back, " + user_first_name + "!";
         title.setText(home_title);
 
         //initialize NoteActivity
