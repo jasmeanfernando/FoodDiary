@@ -61,7 +61,7 @@ public class RegistrationActivity extends AppCompatActivity implements DatePicke
             user_password = String.valueOf(password.getText());
 
             /* 1) validate first and last name
-             * case: must be all letters
+             * case: must be all letters.
              */
             if (!user_first_name.matches("[a-zA-Z]+") || !user_last_name.matches("[a-zA-Z]+")) {
                 alert.setMessage("First and last name must only contain letters.");
@@ -101,8 +101,12 @@ public class RegistrationActivity extends AppCompatActivity implements DatePicke
                 AlertDialog confirmation = alert.create();
                 confirmation.show();
 
-                //add to database
+                //add to app database
                 MainActivity.registeredUsers.add(newUser);
+
+                //add to SQLite database
+                DatabaseHelper db = new DatabaseHelper (this);
+                db.addAccount(user_first_name, user_last_name, user_email, user_password, user_birthday, selected_gender.getText().toString());
 
                 //return to MainActivity
                 clearActivity();
