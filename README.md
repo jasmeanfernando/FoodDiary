@@ -1,11 +1,11 @@
 # :honey_pot: FoodDiary
 Personal Project
 
-FoodDiary is an app that allow users to track their diet and build a healthier lifestyle. Users are able to sign-up with FoodDiary and start recording their daily calorie intake. Registered users are queried onto a SQLite database which allows the user to log in. The app consists of notes and log entries. Each note is used to save a particular food item along with its nutritional information, including total calories, carbohydrates, protein, and fat (all in grams). These notes can then be added to a log that is specific to the date. Each log will contain the total calorie intake of the user for the particular date. Users can then save this log and begin anew for a new day!
+FoodDiary is an app that allow users to track their diet and build a healthier lifestyle. Users are able to sign up with FoodDiary and start recording their daily calorie intake. Registered users are queried onto a SQLite database which allows the user to log in and later view their profile information. The app consists of notes and log entries. Each note is used to save a particular food item along with its nutritional information, including total calories, carbohydrates, protein, and fat (all in grams). These notes can then be added to a log that is specific to the current date. Each log will contain the total calorie intake of the user for that particular date. Users can then save this log and create a new for a new day!
 
 Additionally, credit to the following users for the images used in this application, I do not own them. :yellow_heart:
 - Logo was designed by [tauriis](https://www.deviantart.com/tauriis/art/A-Jar-of-Honey-825077821) on Deviantart.
-- Homepage logo was designed by [cutiezor](https://www.deviantart.com/cutiezor/art/Sunny-Kitchen-840180534) on Deviantart.
+- Homepage logo was designed by [cutiezor](https://www.deviantart.com/cutiezor/art/70-s-living-room-834506562) on Deviantart.
 
 # :ice_cream: FoodDiary Functions
 
